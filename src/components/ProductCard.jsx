@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
         borderRadius: "8px",
         boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
         overflow: "hidden",
-        margin: "15px",
+        margin: "15px",  // Ensures there is a gap between cards
         fontFamily: "'Roboto', sans-serif",
         display: "flex",
         flexDirection: "column",
@@ -47,7 +47,7 @@ export default function ProductCard({ product }) {
     };
 
     const priceStyle = {
-        color: "#FF5722", // e-commerce standard price color
+        color: "#1E3A8A", // Royal Blue for price
         fontSize: "18px",
         marginBottom: "8px",
     };
@@ -60,7 +60,7 @@ export default function ProductCard({ product }) {
     };
 
     const buttonStyle = {
-        backgroundColor: "#FF5722", // standard orange for action
+        backgroundColor: "#2D3748", // Dark Gray for the button background
         color: "#fff",
         border: "none",
         padding: "12px 0",
@@ -74,7 +74,7 @@ export default function ProductCard({ product }) {
     };
 
     const handleHover = (e, hover) => {
-        e.target.style.backgroundColor = hover ? "#e55e2a" : "#FF5722";
+        e.target.style.backgroundColor = hover ? "#4A5568" : "#2D3748"; // Hover effect with slightly lighter dark gray
     };
 
     return (
@@ -100,3 +100,4 @@ export default function ProductCard({ product }) {
         </div>
     );
 }
+

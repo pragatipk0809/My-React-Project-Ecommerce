@@ -1,8 +1,13 @@
-import product1 from "../assets/images/images3.png";
-import product2 from "../assets/images/im1.png";
-import product3 from "../assets/images/im1.png";
-import product4 from "../assets/images/image4.png";
-import product5 from "../assets/images/img5.png";
+import product1 from "../assets/images/sneakers.png";
+import product2 from "../assets/images/UrbanTee.png";
+import product3 from "../assets/images/Headphone.png";
+import product4 from "../assets/images/Jacket.png";
+import product5 from "../assets/images/Cap.png";
+import product6 from "../assets/images/Olive.png";
+import product7 from "../assets/images/ASjacket.png";
+import product8 from "../assets/images/BassHeadphone.png";
+import product9 from "../assets/images/Shoes.png";
+import product10 from "../assets/images/Kicks.png";
 
 export const products = [
   {
@@ -51,7 +56,7 @@ export const products = [
     category: "Accessories",
     price: 499,
     description: "Durable olive-green hat perfect for outdoor activities.",
-    image: product5,
+    image: product6,
   },
   {
     id: 7,
@@ -59,7 +64,7 @@ export const products = [
     category: "Clothing",
     price: 1299,
     description: "High-quality insulated jacket for chilly days.",
-    image: product4,
+    image: product7,
   },
   {
     id: 8,
@@ -67,7 +72,7 @@ export const products = [
     category: "Electronics",
     price: 1499,
     description: "Over-ear headphones built for deep sound and comfort.",
-    image: product3,
+    image: product8,
   },
   {
     id: 9,
@@ -75,7 +80,7 @@ export const products = [
     category: "Footwear",
     price: 799,
     description: "Lightweight shoes built for casual comfort and walking.",
-    image: product2,
+    image: product9,
   },
   {
     id: 10,
@@ -83,6 +88,6 @@ export const products = [
     category: "Footwear",
     price: 2499,
     description: "Bold red sneakers that combine style and performance.",
-    image: product1,
+    image: product10,
   },
 ];

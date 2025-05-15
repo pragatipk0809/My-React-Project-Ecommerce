@@ -9,18 +9,22 @@ export default function Header() {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "15px 30px",
-        backgroundColor: "#2c003e", // deep violet
+        backgroundColor: "#0b3d91", // royal blue
         color: "#ffffff",
-        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-        fontFamily: "Arial, sans-serif"
+        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+        position: "sticky",
+        top: 0,
+        zIndex: 1000
     };
 
     const logoStyle = {
-        fontSize: "24px",
+        fontSize: "26px",
         textDecoration: "none",
         color: "#ffffff",
-        fontWeight: "bold",
-        letterSpacing: "1px"
+        fontWeight: "700",
+        letterSpacing: "1px",
+        transition: "color 0.3s"
     };
 
     const cartLinkStyle = {
@@ -29,23 +33,32 @@ export default function Header() {
         fontSize: "18px",
         display: "flex",
         alignItems: "center",
-        gap: "8px"
+        gap: "10px",
+        position: "relative",
+        transition: "color 0.3s"
     };
 
     const cartCountStyle = {
-        backgroundColor: "#ff66cc", // pink-violet
-        color: "#2c003e", // contrast
+        backgroundColor: "#ffffff",
+        color: "#0b3d91", // royal blue contrast
         borderRadius: "12px",
         padding: "2px 8px",
-        marginLeft: "4px",
         fontSize: "14px",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        boxShadow: "0 0 0 2px #0b3d91"
+    };
+
+    const hoverStyle = {
+        textDecoration: "underline",
+        color: "#d1d1d1"
     };
 
     return (
         <header style={headerStyle}>
-            <Link to="/" style={logoStyle}>CodeShop</Link>
-            <Link to="/cart" style={cartLinkStyle}>
+            <Link to="/" style={logoStyle} onMouseOver={(e) => e.target.style.color = "#d1d1d1"} onMouseOut={(e) => e.target.style.color = "#ffffff"}>
+                MyShopping
+            </Link>
+            <Link to="/cart" style={cartLinkStyle} onMouseOver={(e) => e.target.style.color = "#d1d1d1"} onMouseOut={(e) => e.target.style.color = "#ffffff"}>
                 🛒 Cart
                 <span style={cartCountStyle}>{cart.length}</span>
             </Link>
